@@ -68,10 +68,13 @@
     "bemto.jade": "^1.0.0",
     "browser-sync": "^2.10.0",
     "cross-env": "^1.0.7",
+    "custombox": "^4.0.1",
     "debuga": "^1.0.2",
+    "es5-shim": "^4.5.9",
     "eslint": "^2.12.0",
     "eslint-loader": "^1.1.1",
     "expose-loader": "^0.7.1",
+    "flickity": "^2.0.5",
     "gulp": "^3.9.0",
     "gulp-bump": "^1.0.0",
     "gulp-cached": "^1.1.0",
@@ -119,8 +122,13 @@
     "stylus-import-if-exist": "^1.1.0",
     "stylus-svg-size-template": "^1.0.0",
     "svg4everybody": "^2.0.0",
+    "vanilla-modal": "^1.6.4",
     "webpack": "^1.12.9",
     "webpack-stats-logger": "^1.0.1",
     "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "custombox": "^4.0.1",
+    "vanilla-modal": "^1.6.4"
   }
 }

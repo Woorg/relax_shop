@@ -1,0 +1,42 @@
+.pagination
+	text-align center
+	&__w
+		position relative
+		display inline-block
+	&__list
+		padding-top 4px
+		font-size 0
+	&__item
+		margin-left 8px
+		display inline-block
+		vertical-align top
+		font-size 24px
+		&:first-child
+			margin-left 0
+	&__link
+		text-decoration none
+		color #282828
+		&:hover
+			color #5bb453
+	.pagination__item_active
+		.pagination__link
+			font-family $osB
+			color #5bb453
+	&__back,
+	&__next
+		position absolute
+		top 0
+		hide-text()
+		text-decoration none
+	&__back
+		left -50px
+		retinaSprite($pag_prev_group)
+		&:hover
+			retinaSprite($pag_prev_hover_group)
+	&__next
+		right -50px
+		retinaSprite($pag_next_group)
+		&:hover
+			retinaSprite($pag_next_hover_group)
+
+

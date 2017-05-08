@@ -1,0 +1,104 @@
+.product-card
+	padding-top 30px
+	padding-right 20px
+	padding-bottom 30px
+	padding-left 30px
+	width 1076px
+	clearfix()
+	&__left
+		float left
+		width 520px
+	&__right
+		margin-left 12px
+		float right
+		width 494px
+		text-align left
+	&__slider
+		position relative
+		border 1px solid #c3c5c3
+		margin-bottom 20px
+		padding 10px
+		width 503px
+		height 483px
+	&__slider-item
+		display inline-block
+		vertical-align top
+		width 503px
+		height 463px
+		img
+			max-width 100%
+			height auto
+
+	&__thumbs
+		position relative
+		height 176px
+
+	&__thumb-item
+		border 1px solid #c3c5c3
+		// margin-right 18px
+		padding 8px
+		display inline-block
+		vertical-align top
+		width 146px
+		height 135px
+		img
+			max-width 100%
+			height auto
+
+		&:nth-child(2n)
+			left 178px
+		&:nth-child(3n)
+			left 356px
+		// &:hover
+		// 	img
+		// 		opacity 0.8
+	&__title
+		margin-right 150px
+		margin-bottom 22px
+		font-size 24px
+		font-family $osB
+		line-height 30px
+		color #5a5a5a
+	&__price
+		border-top 1px solid #C2C4C2
+		border-bottom 1px solid #C2C4C2
+		margin-bottom 15px
+		padding-top 16px
+		padding-bottom 16px
+		font-family $osSb
+		font-size 24px
+		line-height 1
+		color #5bb453
+	&__specs
+		margin-bottom 22px
+	&__specs-title
+		margin-bottom 10px
+		font-size 20px
+		font-family $osSb
+		color #5bb453
+	&__specs-list
+		color #0e0e0e
+	&__specs-item
+		margin-bottom 8px
+		font-size 18px
+	&__specs-term
+		margin-right 16px
+		font-family $osB
+	&__specs-def
+		line-height 30px
+
+	&__button
+		padding-top 18px
+		padding-right 110px
+		padding-left 110px
+		padding-bottom 15px
+		display inline-block
+		background-color #4b9b44
+		color #FFF
+		font-size 33px
+		line-height 24px
+		text-decoration none
+		text-transform uppercase
+
+
+

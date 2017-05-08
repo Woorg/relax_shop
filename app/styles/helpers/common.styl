@@ -1,0 +1,57 @@
+.page
+	padding-top 64px
+	font-family $osR
+	font-size 18px
+	font-weight normal
+	color #282828
+	background #EAECEA
+
+
+.in
+	margin auto
+	padding-right 15px
+	padding-left 15px
+	width 1140px
+
+
+.main
+	padding-top 20px
+	padding-bottom 47px
+	@extends .in
+	padding-left 0
+	padding-right 0
+	clearfix()
+
+
+.button
+	padding-top 5px
+	padding-bottom 4px
+	display block
+	font-family $osR
+	font-size 18px
+	line-height 24px
+	text-align center
+	text-decoration none
+	text-transform uppercase
+	transition background .2s ease
+	&_card
+		background #5BB453
+		color #fff
+		&:hover
+			background #4B9B44
+
+	&_more
+		background #cccdcb
+		color #292828
+
+	&_big
+		padding-top 20px
+		padding-right 24px
+		padding-bottom 18px
+		padding-left 24px
+		display inline-block
+		vertical-align top
+		background #5BB453
+		color #fff
+		&:hover
+			background #4B9B44

@@ -1,0 +1,162 @@
+.cart
+	display block
+	&__title
+		margin-bottom 44px
+		font-family $lob
+		font-size 30px
+		color #282828
+	// &__table
+
+	&__summary
+		margin-bottom 15px
+		text-align right
+	&__summary-w
+		padding-top 10px
+		padding-right 36px
+		padding-bottom 10px
+		padding-left 20px
+		min-width 263px
+		display inline-block
+		vertical-align top
+		background #2c2c2c
+		color #fff
+		line-height 1
+		clearfix()
+	&__summary-title
+		float left
+	&__summary-price
+		float right
+
+	&__button
+		padding-left 54px
+		padding-right 54px
+		float right
+
+.cart-table
+	border 1px solid #63B85C
+	width 100%
+	font-size 16px
+	line-height 18px
+	&__row
+		border-bottom 1px solid #63B85C
+		td
+			border-right 1px solid #63B85C
+			padding-top 25px
+			padding-bottom 30px
+	&__head
+		padding-top 12px
+		padding-bottom 12px
+		background #5bb453
+		color #FFF
+		text-align center
+	tr
+		border-right 1px solid #63B85C
+	&__image
+		padding-left 65px
+		padding-right 70px
+		width 199px
+
+	&__title
+		padding-left 42px
+		padding-right 42px
+		width 298px
+	&__quant
+		padding-left 42px
+		padding-right 42px
+		width 223px
+	&__price
+		padding-left 82px
+		padding-right 70px
+		width 254px
+	&__delete
+		width 130px
+		text-align center
+
+.cart
+	&__item-image
+		margin auto
+		width 65px
+		height 65px
+		display block
+		text-decoration none
+		img
+			max-width 100%
+			height auto
+
+	&__item-title
+		color #5a5a5a
+		font-size 18px
+		line-height 24px
+		text-decoration none
+
+	&__item-price
+		color #a3a3a3
+		span
+			color #1f1f1f
+	&__item-del
+		color #9fa09f
+		font-size 24px
+		text-decoration none
+.quant
+	position relative
+	width 148px
+	background #FFF
+	&__input
+		border 1px solid #DADBDA
+		padding 6px 40px 6px
+		width 148px
+		height 29px
+		background transparent
+		font-size 16px
+		line-height 16px
+		text-align center
+		color #1b1b1b
+	&__decr,
+	&__incr
+		position absolute
+		top 0
+		border none
+		width 22px
+		height 29px
+		background transparent
+		hide-text()
+	&__decr
+		left 0
+		&:after
+			position absolute
+			top 50%
+			left 50%
+			margin-top -5px
+			width 0
+			height 0
+			content ""
+			border-style solid
+			border-width 6px 5px 6px 0
+			border-color transparent #c2c5c2 transparent transparent
+		&:hover
+			&:after
+				width 0
+				height 0
+				border-style solid
+				border-width 6px 5px 6px 0
+				border-color transparent #4b9b44 transparent transparent
+	&__incr
+		right 0
+		&:after
+			position absolute
+			top 50%
+			right 50%
+			margin-top -5px
+			width 0
+			height 0
+			content ''
+			border-style solid
+			border-width 6px 0 6px 5px
+			border-color transparent transparent transparent #c2c5c2
+		&:hover
+			&:after
+				width 0
+				height 0
+				border-style solid
+				border-width 6px 0 6px 5px
+				border-color transparent transparent transparent #4b9b44

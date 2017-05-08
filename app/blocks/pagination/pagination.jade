@@ -1,0 +1,19 @@
+mixin pagination()
+	.pagination
+		.pagination__w
+			a.pagination__back(href="#back", Back="")
+			ul.pagination__list
+				li.pagination__item.pagination__item_active
+					a.pagination__link(href="#link") 1
+				li.pagination__item
+					a.pagination__link(href="#link") 2
+				li.pagination__item
+					a.pagination__link(href="#link") 3
+				li.pagination__item
+					a.pagination__link(href="#link") 4
+				li.pagination__item
+					span.pagination__dots(href="#link") ...
+				li.pagination__item
+					a.pagination__link(href="#link") 10
+
+			a.pagination__next(href="#next") Next

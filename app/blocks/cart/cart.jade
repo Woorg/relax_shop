@@ -1,0 +1,57 @@
+mixin cart()
+	.cart
+		h1.cart__title Категории товара
+
+		table.cart__table.cart-table
+			tr
+				th.cart-table__head Изображение
+				th.cart-table__head Наименование товара
+				th.cart-table__head Кол-во
+				th.cart-table__head Цена, руб.
+				th.cart-table__head Действие
+
+			tr.cart-table__row
+				td.cart-table__image
+					a.cart__item-image(href='#link')
+						img(src="assets/images/content/cart-item-2.jpg", alt="")
+				td.cart-table__title
+					a.cart__item-title(href="#link") Набор из 2-х подушек анатомической формы
+				td.cart-table__quant
+					.quant
+						input.quant__input(type='text', name='', value='1')
+						button.quant__decr(type='button', title='Decrease Quantity') -
+						button.quant__incr(type='button', title='Increase Quantity') +
+
+				td.cart-table__price
+					.cart__item-price 1 x 152 руб.
+						span 152 руб.
+
+				td.cart-table__delete
+					a.cart__item-del(href="#del") x
+
+			tr.cart-table__row
+				td.cart-table__image
+					a.cart__item-image(href='#link')
+						img(src="assets/images/content/cart-item-1.jpg", alt="")
+				td.cart-table__title
+					a.cart__item-title(href="#link") Подушка Dormeo Air Smart Duo
+				td.cart-table__quant
+					.quant
+						input.quant__input(type='text', name='', value='1')
+						button.quant__decr(type='button', title='Decrease Quantity') -
+						button.quant__incr(type='button', title='Increase Quantity') +
+
+				td.cart-table__price
+					.cart__item-price 1 x 152 руб.
+						span 500 руб.
+
+				td.cart-table__delete
+					a.cart__item-del(href="#del") x
+
+		.cart__summary
+			.cart__summary-w
+				.cart__summary-title Итого:
+				.cart__summary-price 2 309 руб.
+
+		a.cart__button.button.button_card(href="#link") в корзину
+

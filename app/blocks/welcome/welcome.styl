@@ -1,0 +1,68 @@
+.welcome
+	background transparent url('../images/general/bottom-img.jpg') 50% 100% / cover no-repeat
+	&__in
+		@extends .in
+		padding-top 40px
+		padding-right 20px
+		padding-bottom 80px
+		padding-left 28px
+	&__title
+		margin-bottom 28px
+		font-family $lob
+		font-size 36px
+		color #5bb453
+	&__text
+		margin-bottom 20px
+		color #282828
+		line-height 30px
+		&_1
+			width 636px
+		&_2
+			width 480px
+
+
+	// &__button
+
+
+
+.advnges
+	margin-bottom 40px
+	&__title
+		margin-bottom 16px
+		font-family $lob
+		font-size 30px
+		color #202020
+	&__list
+		margin-left 27px
+		font-size 0
+	&__item
+		position relative
+		margin-left 40px
+		padding-top 115px
+		display inline-block
+		vertical-align top
+		font-family $lob
+		font-size 24px
+		color #202020
+		text-align center
+		&:after
+			position absolute
+			top 0
+			left 50%
+			margin-left -50px
+			content ''
+		&:first-child
+			margin-left 0
+	&__item_1
+		&:after
+			retinaSprite($adv_icon_1_group)
+	&__item_2
+		&:after
+			retinaSprite($adv_icon_2_group)
+	&__item_3
+		&:after
+			retinaSprite($adv_icon_3_group)
+	&__item_4
+		&:after
+			retinaSprite($adv_icon_4_group)
+

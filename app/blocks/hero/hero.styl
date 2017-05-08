@@ -1,0 +1,68 @@
+.hero
+	&__in
+		position relative
+		@extends .in
+
+	// &__slider
+
+	&__logo
+		position absolute
+		top 230px
+		left 50%
+		margin-left -272px
+		z-index 1
+
+
+.slider
+	.flickity-page-dots
+		position relative
+		left auto
+		right auto
+		margin auto
+		margin-top -20px
+		// width 1140px
+		max-width 1140px
+		bottom 44px
+		text-align right
+		.dot
+			border 1px solid #95c681
+			margin-left 15px
+			margin-right 0
+			width 28px
+			height 28px
+			background rgba(255,255,255, .8)
+			border-radius 50%
+			opacity 1
+			&:first-child
+				margin-left 0
+			&.is-selected
+				border 1px solid #5bb553
+				background #5bb553
+
+
+.logo
+	padding-top 120px
+	padding-left 52px
+	padding-bottom 140px
+	padding-right 66px
+	width 535px
+	height 535px
+	background #FFF
+	text-align center
+	font-family $lob
+	line-height 62px
+
+	color #161616
+	text-decoration none
+	border-radius 50%
+	box-shadow 0 0 0 12px rgba(255,255,255, .6)
+	&__title
+		border-bottom 1px solid #161616
+		padding-left 70px
+		padding-bottom 34px
+		padding-right 70px
+		font-size 76px
+	&__slogan
+		padding-top 18px
+		font-size 36px
+		line-height 48px
