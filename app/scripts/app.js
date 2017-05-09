@@ -1,6 +1,6 @@
 import Flickity from 'flickity/dist/flickity.pkgd.min';
 import VanillaModal from 'vanilla-modal';
-import 'es5-shim';
+// import 'es5-shim';
 
 
 
