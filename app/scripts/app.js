@@ -79,6 +79,32 @@ import VanillaModal from 'vanilla-modal';
 
 	document.addEventListener("DOMContentLoaded", function(){
 
+
+		if (navigator.userAgent.match('MSIE 10.0;')) {
+			document.querySelector('html').className += " ie10"
+		}
+
+		function GetIEVersion() {
+			var sAgent = window.navigator.userAgent;
+			var Idx = sAgent.indexOf("MSIE");
+
+			// If IE, return version number.
+			if (Idx > 0)
+				return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+
+			// If IE 11 then look for Updated user agent string.
+			else if (!!navigator.userAgent.match(/Trident\/7\./))
+				return 11;
+
+			else
+				return 0; //It is not IE
+		}
+
+
+		if (GetIEVersion() > 9) {
+			document.querySelector('html').className += " ie10";
+		}
+
 		let elemA = document.querySelector('.product-card__slider');
 
 
@@ -88,7 +114,10 @@ import VanillaModal from 'vanilla-modal';
 			let flktyA = new Flickity( elemA, {
 				pageDots: false,
 				prevNextButtons: false,
-				contain: false
+				// contain: false
+				adaptiveHeight: true,
+				wrapAround: true
+
 
 			});
 		}
@@ -101,11 +130,18 @@ import VanillaModal from 'vanilla-modal';
 			let flktyB = new Flickity( elemB, {
 				asNavFor: '.product-card__slider',
 				pageDots: false,
-				prevNextButtons: false
+				prevNextButtons: false,
+				wrapAround: false,
+				contain: true,
+				cellAlign: 'left',
+				setGallerySize: false,
+				// adaptiveHeight: true
+				resize: false,
+				draggable: true,
+				percentPosition: false
 
 			});
 		}
-
 
 
 	});
@@ -117,8 +153,8 @@ import VanillaModal from 'vanilla-modal';
 
 	document.addEventListener("DOMContentLoaded", function(){
 
-		// Modal
 		const modal = new VanillaModal({});
+		// Modal
 
 	});
 
