@@ -1,42 +1,5 @@
 import Flickity from 'flickity/dist/flickity.pkgd.min';
 import VanillaModal from 'vanilla-modal';
-// import 'es5-shim';
-
-
-
-(function () {
-
-	// document.addEventListener("DOMContentLoaded", function(){
-
-	// 	function isEmpty(obj) {
-	// 		for(var key in obj) {
-	// 			if(obj.hasOwnProperty(key))
-	// 				return false;
-	// 		}
-	// 		return true;
-	// 	}
-
-	// 	// Hero Slider
-
-	// 	let elem = document.querySelector('.hero__slider');
-
-	// 	if(elem === null) {
-	// 	} else {
-	// 		let flkty = new Flickity( elem, {
-	// 			cellAlign: 'left',
-	// 			contain: true,
-	// 			prevNextButtons: false
-	// 		});
-
-	// 	}
-
-
-	// });
-
-
-
-
-})();
 
 (function () {
 
