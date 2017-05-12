@@ -24,12 +24,29 @@ import VanillaModal from 'vanilla-modal';
 		} else {
 
 			let flkty = new Flickity( elem, {
-				wrapAround: false,
-				cellAlign: 'left',
-				contain: false,
 				prevNextButtons: true,
-				pageDots: false
+				pageDots: false,
+				adaptiveHeight: false,
+				// wrapAround: false,
+				// contain: true,
+				cellAlign: 'left',
+				setGallerySize: false,
+				resize: false,
+				percentPosition: false
 			});
+
+			flkty.on( 'select', function() {
+				console.log( flkty.selectedIndex );
+
+			if(flkty.selectedIndex === 3) {
+				flkty.select( 0 );
+			}
+});
+
+
+
+
+
 		}
 
 	});
@@ -79,7 +96,13 @@ import VanillaModal from 'vanilla-modal';
 				prevNextButtons: false,
 				// contain: false
 				adaptiveHeight: true,
-				wrapAround: true
+				wrapAround: true,
+				contain: false,
+				cellAlign: 'left',
+				setGallerySize: false,
+				// adaptiveHeight: true
+				resize: false,
+				percentPosition: false
 
 
 			});
@@ -94,13 +117,12 @@ import VanillaModal from 'vanilla-modal';
 				asNavFor: '.product-card__slider',
 				pageDots: false,
 				prevNextButtons: false,
-				wrapAround: false,
-				contain: true,
+				wrapAround: true,
+				contain: false,
 				cellAlign: 'left',
 				setGallerySize: false,
 				// adaptiveHeight: true
 				resize: false,
-				draggable: true,
 				percentPosition: false
 
 			});
